@@ -2918,17 +2918,25 @@
             <span class="contact-label">05 / Contact</span>
             <h2>Let's make the next screen <em>feel considered.</em></h2>
             <p>
-              For collaboration, feedback, or a good technical problem, the cleanest way to reach me right now is GitHub.
+              For collaboration, feedback, or a good technical problem, reach out on Telegram, email, or GitHub.
             </p>
 
             <div class="contact-actions">
-              <a class="contact-link" href="https://github.com/tasin023" target="_blank" rel="noopener">
-                Open GitHub
+              <a class="contact-link" href="https://t.me/TasinSaimon" target="_blank" rel="noopener">
+                Message on Telegram
                 <span>&nearr;</span>
               </a>
 
-              <button class="copy-handle" type="button" data-copy="github.com/tasin023">
-                Copy handle
+              <a class="copy-handle" href="mailto:saimongazi000@gmail.com">
+                saimongazi000@gmail.com
+              </a>
+
+              <a class="copy-handle" href="https://github.com/tasin023" target="_blank" rel="noopener">
+                Open GitHub
+              </a>
+
+              <button class="copy-handle" type="button" data-copy="t.me/TasinSaimon">
+                Copy Telegram
               </button>
             </div>
 
@@ -3695,12 +3703,12 @@
           button.addEventListener("click", async () => {
             try {
               await copyText(button.dataset.copy);
-              status.textContent = "Copied: github.com/tasin023";
+              status.textContent = `Copied: ${button.dataset.copy}`;
               window.setTimeout(() => {
                 status.textContent = "";
               }, 2400);
             } catch {
-              status.textContent = "Copy failed. Use github.com/tasin023";
+              status.textContent = `Copy failed. Use ${button.dataset.copy}`;
             }
           });
         });
